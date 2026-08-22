@@ -1,0 +1,21 @@
+{
+  "name": "javascript-project",
+  "version": "1.0.0",
+  "description": "first project",
+  "homepage": "https://github.com/Hobim8/javascript-project#readme",
+  "bugs": {
+    "url": "https://github.com/Hobim8/javascript-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hobim8/javascript-project.git"
+  },
+  "license": "ISC",
+  "author": "hobim",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  }
+}

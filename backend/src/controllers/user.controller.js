@@ -45,13 +45,13 @@ const loginUser = async (req, res) => {
             email: email.toLowerCase()
         });
 
-        if(!user) return res.status(400).json({
+        if (!user) return res.status(400).json({
             message: "User not found"
         });
 
         //checking if the password is correct 
         const isMatch = await user.comparePassword(password);
-        if(!isMatch) return res.status(400).json({
+        if (!isMatch) return res.status(400).json({
             message: "invaild credentials"
         })
 
@@ -72,5 +72,5 @@ const loginUser = async (req, res) => {
 
 export {
     registerUser,
-    loginUser 
+    loginUser
 };  

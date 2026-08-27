@@ -10,6 +10,7 @@ app.use(express.json());
 // routes declaration
 app.use("/api/users", userRouter);
 app.use("/api/login", loginUser);
+app.use("/api/logout", loginUser)
 //app.use("/api/v1/posts", postRouter);
 
 
